@@ -6,10 +6,10 @@
 using namespace std;
 const int maxen=200;
 const int Maxx=9999;
-int edge[maxen][maxen];//±ﬂæÿ’Û 
+int edge[maxen][maxen];//距离矩阵
 int visit[maxen];//记录某个点是否被访问过
 int lowcost[maxen];//存放起点到其他点最短的距离
-void init(int n){  //初始化
+void init(int n){  //初始化init函数
 	for(int i=1;i<=n;++i){
 		visit[i]=false;
 		lowcost[i]=Maxx;
